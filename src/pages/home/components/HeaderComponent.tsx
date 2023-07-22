@@ -1,5 +1,5 @@
 import ProfilePicture from "../../../components/profile/profileComponent";
-
+import flagIcon from "../../../assets/icons/argentina_flag.png"
 function Header() {
     return (
         <div className="flex justify-center m-4 fade">
@@ -20,7 +20,7 @@ function Title() {
                     Full-Stack Developer
                     <span className="inline-block"
                     ><img
-                            src="static/imgs/icons/argentina_flag.png"
+                            src={flagIcon}
                             alt=""
                             className="icon_flag"
                         /></span>
