@@ -1,3 +1,4 @@
+import { CvButton } from "../../components/cvButton/CvButtonComponent";
 import { Facts } from "./components/Facts/FactsComponent";
 import Header from "./components/Header/HeaderComponent";
 
@@ -13,6 +14,7 @@ function Home() {
     <hr
       className="w-48 h-1 mx-auto my-8 bg-blue-600 dark:bg-blue-400 border-0 rounded md:my-10"
     />
+    <CvButton></CvButton>
     </div >
   );
 }

@@ -1,0 +1,22 @@
+.tooltip {
+    transition: visibility 0.3s ease-in-out;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(91, 91, 93);
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 6px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.my-float {
+    font-size: 2rem;
+}
