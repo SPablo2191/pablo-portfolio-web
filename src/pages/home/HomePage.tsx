@@ -1,2 +1,8 @@
+import Header from "./components/HeaderComponent";
 
-export {}
+function Home() {
+    return (
+        <Header></Header>
+    );
+  }
+export default Home;

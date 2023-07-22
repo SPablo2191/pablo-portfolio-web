@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-
+import Home from './pages/home/HomePage';
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="bg-white dark:bg-slate-800 dark:text-white text-gray-800">
+    <Home></Home>
+    </div>
   );
 }
 
