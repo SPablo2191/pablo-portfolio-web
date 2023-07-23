@@ -3,9 +3,9 @@ import { TechnologyItem } from "../../technologyItem/TechnologyItemComponent";
 
 function SmallCard({ title, subtitle, description, footer, url, items }: any) {
   return (
-    <a href={url} className="fade">
+    <a href={url} className="fade" target="_blank">
       <div
-        className="bg-white dark:bg-slate-800 m-4 rounded-xl px-6 py-8 ring-1 hover:drop-shadow-2xl ring-slate-900/5 shadow-xl text-center"
+        className="bg-white dark:bg-slate-800 my-4 md:mx-4 rounded-xl px-6 py-8 ring-1 hover:drop-shadow-2xl ring-slate-900/5 shadow-xl text-center"
       >
         <h2 className="font-bold text-3xl">{title}</h2>
         <h3 className="my-3">{subtitle}</h3>
@@ -14,7 +14,7 @@ function SmallCard({ title, subtitle, description, footer, url, items }: any) {
         </p>
         {
           items ? (
-            <>
+            <div className="mt-6">
               <h3 className="text-2xl font-bold">Tecnologias</h3>
               <div className="flex justify-center  flex-wrap">
                 {items.map((item: Technology) => (
@@ -23,7 +23,7 @@ function SmallCard({ title, subtitle, description, footer, url, items }: any) {
                   </div>
                 ))}
               </div>
-            </>
+            </div>
           ) : (<></>)
         }
         <p className="font-bold">{footer}</p>
