@@ -9,7 +9,7 @@ function Projects() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch(apiUrl + 'projects')
+        fetch(apiUrl + 'projects/?format=json')
             .then(response => response.json())
             .then(data => {
                 setData(data);

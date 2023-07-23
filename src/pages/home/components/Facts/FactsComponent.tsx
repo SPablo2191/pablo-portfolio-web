@@ -9,7 +9,7 @@ function Facts() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(apiUrl + 'facts')
+        fetch(apiUrl + 'facts/?format=json')
             .then(response => response.json())
             .then(data => {
                 setData(data);
