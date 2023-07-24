@@ -1,5 +1,5 @@
 function TechnologyItem({ imageUrl, name }: any) {
-    return (<div className="flex flex-col text-center">
+    return (<div className="flex flex-col items-center justify-center">
         <img
             src={imageUrl}
             alt={name}
