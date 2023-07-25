@@ -2,7 +2,7 @@ import './CvButton.style.css';
 function CvButton(){
     return (
         <a
-        href="https://drive.google.com/file/d/1W0hDlJiKTPrqo3ainhHGPBx00vTVjbYW/view?usp=sharing"
+        href={process.env.REACT_APP_CV_URL ?? ''}
         target="_blank"
         className="float tooltip"
       >
